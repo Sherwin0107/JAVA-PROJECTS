@@ -1,4 +1,3 @@
-package FILEHANDLING;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman_game {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("HANGMAN GAME");
 
@@ -49,6 +48,7 @@ public class Hangman_game {
         }
 
         System.out.println("YOU LOSE!!!");
+        sc.close();
     }
 
     static String getHangman(int wrongGuess){
@@ -111,6 +111,7 @@ public class Hangman_game {
         }
     }
 }
+
 
 
 
