@@ -89,7 +89,7 @@ public class Hangman_game {
 
     static String randomWord(){
         Random rand= new Random();
-        String filePath = "C:\\Users\\LENOVO\\IdeaProjects\\JAVA\\src\\FILEHANDLING\\Words.txt";
+        String filePath = "Words.txt";
         ArrayList<String> words = new ArrayList<>();
         try (BufferedReader read = new BufferedReader(new FileReader(filePath))){
             String line;
@@ -111,5 +111,6 @@ public class Hangman_game {
         }
     }
 }
+
 
 
